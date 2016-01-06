@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>摇一摇抽签</title>
+    <style>
+        * {
+            font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "STHeitiSC-Light", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+        }
+
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: url("./img/background.jpg") no-repeat center center;
+            background-size: cover;
+        }
+
+        @keyframes play {
+            100% {
+                background-position: -737px -2px;
+            }
+        }
+
+        @-webkit-keyframes play {
+            100% {
+                background-position: -737px -2px;
+            }
+        }
+
+        .sprite {
+            width: 145px;
+            height: 300px;
+            display: inline-block;
+            overflow: hidden;
+            background: url('./img/234.png') no-repeat -2px -2px;
+            animation: play 0.8s steps(5) infinite;
+            -webkit-animation: play 1.2s steps(5) infinite;
+        }
+
+
+        .buttonBox {
+            position: fixed;
+            bottom: 10%;
+        }
+
+        .cover {
+            background-size: 50%;
+            background: rgba(0, 0, 0, 0.7) url(./img/share.png) no-repeat top right;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .decode .inner {
+            width: 100%;
+            height: 100%;
+            background: url('./img/decode.png') center no-repeat;
+            background-size: 80%;
+        }
+
+        .item {
+            width: 100%;
+            text-align: center;
+            padding-top: 20%;
+        }
+
+        .qiancover{
+            background-size: 50%;
+            position: absolute;
+            width: 100%;
+            top: 28%;
+            display: block;
+        }
+
+        .qian {
+            width: 100px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            background: url('./img/234_03.png') no-repeat -2px -2px;
+            background-size: contain;
+        }
+        .distich {
+            color: #d50000;
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .buttonBox {
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+        }
+
+        .shakeBtn {
+            width: 80%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <div style="display:none">
+        <!--这个隐藏的gif用于分享到微信时自动作为缩略图-->
+        <img src="./img/thumbnail.gif" />
+    </div>
+    <h2 class="distich">摇一摇, 来抽签</h2>
+    <section class="qiancover">
+        <div class="qian"></div>
+    </section>
+
+    <section class="buttonBox">
+        <img src="./img/button02.png" class="shakeBtn" onclick="start();">
+    </section>
+
+    
+    <div class="cover result">
+        <div class="item">
+            <div class="sprite a1"></div>
+        </div>
+    </div>
+
+    <div class="cover decode">
+        <div class="inner"></div>
+    </div>
+
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
