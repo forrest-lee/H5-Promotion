@@ -17,7 +17,8 @@ function showDecode() {
     setTimeout(jumpToDecode, 3000);
 }
 
-jumpToDecode = function(){
+//跳转至签文页面
+function jumpToDecode(){
     var urls = ["#", "#"];
     var jumpTo = urls[parseInt(Math.random() * urls.length)];
     window.location = jumpTo;
