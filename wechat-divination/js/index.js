@@ -7,7 +7,7 @@ function start() {
     $('.qiancover').hide();
     $('.decode').hide();
     $('.result').show();
-    setTimeout(showDecode, 3000);
+    // setTimeout(showDecode, 3000);
 }
 
 // 显示正在解签
@@ -17,7 +17,6 @@ function showDecode() {
     setTimeout(jumpToDecode, 3000);
 }
 
-//跳转至签文页面
 function jumpToDecode(){
     var urls = ["#", "#"];
     var jumpTo = urls[parseInt(Math.random() * urls.length)];
@@ -65,15 +64,14 @@ if(window.DeviceMotionEvent) {
 }*/
 
 
-//微信分享  失效了，有时间的可以根据官方公布的 JS-SDK进行开发
-
+//微信分享没有用上，可以根据官方公布的 JS-SDK进行开发
 var shareMeta = {
-    img_url: "http://www.imeiwen.com/2015/thumbnail.gif",
+    img_url: "./img/thumbnail.gif",
     image_width: 100,
     image_height: 100,
     link: 'http://www.imeiwen.com/2015/index.html',
-    title: "2015乙未羊，为自己摇枚新年签！",
-    desc: "这是对过去的感悟和对新年的祈望，希望它能为你带来好运...",
+    title: "摇枚新年祈福签！",
+    desc: "这是对过去的感悟和对新年的祈望，希望它能为你带来好运",
     appid: ''
 };
 document.addEventListener('WeixinJSBridgeReady', function () {
