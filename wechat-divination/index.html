@@ -36,16 +36,24 @@
             -webkit-animation: play 0.8s steps(5) infinite;
         }
         
-        /* 提醒用户分享的半透明遮罩层 */
+        /* 半透明遮罩层 */
         .cover {
             background-size: 50%;
-            background: rgba(0, 0, 0, 0.7) url(./img/share.png) no-repeat top right;
+            background: rgba(0, 0, 0, 0.7) no-repeat top right;
             position: fixed;
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
             display: none;
+        }
+
+        /* share */
+        .share {
+            position: absolute;
+            width: 60%;
+            top: 2px;
+            right: 2px;
         }
 
         /* 解签的过渡图 */
@@ -60,7 +68,8 @@
         .item {
             width: 100%;
             text-align: center;
-            padding-top: 45%;
+            position: absolute;
+            top: 26%;
         }
 
         /* 静态签筒定位用的容器 */
@@ -146,6 +155,7 @@
 
     
     <div class="cover result">
+        <img src="./img/share.png" class="share">
         <div class="item">
             <div class="sprite a1"></div>
         </div>
