@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React拆红包动画</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id='redpacket'></div>
+    <script src="./libs/react.min.js"></script>
+    <script src="./libs/react-dom.min.js"></script>
+    <script type="text/javascript" src="./build/RedPacket.js"></script>
+    <script type="text/javascript">
+        ReactDOM.render(React.createElement(ReadPacket, null), document.getElementById('redpacket'));
+    </script>
+</body>
+</html>
