@@ -1,4 +1,4 @@
-# HTML5 Content Marketing Example
+# Web Demo Collection
 > 我把平时自己做的好玩有趣的一些小Demo分享出来，希望和大家一起交流学习
 
 1. **wechat-divination**: 微信摇一摇抽签，摇签
