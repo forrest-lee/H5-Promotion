@@ -1,4 +1,4 @@
-// 跨平台的字体设定，在各个操作系统下都有最佳展示效果
+ /*跨平台的字体设定，在各个操作系统下都有最佳展示效果*/
 * {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
@@ -8,12 +8,12 @@
 }
 .redpack-container{
   text-align: center;
-  //width: 100%;
+  /*width: 100%;*/
   margin: 0 auto;
-  //padding: 15px 5px;
-  //background-color: rgba(0,0,0,0.3);
-  //height: 100%;
-  //position: absolute;
+  /*padding: 15px 5px;*/
+  /*background-color: rgba(0,0,0,0.3);*/
+  /*height: 100%;*/
+  /*position: absolute;*/
 }
 .redpack{
   height: 450px;
@@ -99,14 +99,14 @@
 #redpack-opened{
   width: 100px;
   height: 100px;
-  //border: 1px solid #FFA73A;
-  //background-color: #FFA73A;
+  /*border: 1px solid #FFA73A;*/
+  /*background-color: #FFA73A;*/
   border-radius: 50%;
   color: #fff;
   font-size: 20px;
   display: inline-block;
   margin-top: -50px;
-  //box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);*/
 }
 .rotate{
   -webkit-animation: anim .6s infinite alternate;
